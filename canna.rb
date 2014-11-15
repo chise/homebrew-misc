@@ -7,6 +7,7 @@ class Canna < Formula
   version '3.7p3_2'
 
   depends_on 'imake' => :build
+  depends_on 'gcc' => :build
 
   def patches
     # From Fink.
@@ -22,6 +23,8 @@ class Canna < Formula
 
     inreplace 'update-canna-dics-dir', '@PREFIX@', prefix
     inreplace 'update-canna-dics-dir', '@HOMEBREW_VAR@', var
+
+    ENV.append 'IMAKECPP', 'cpp-4.9'
 
     system "xmkmf"
 
