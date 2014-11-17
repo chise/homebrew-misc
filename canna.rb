@@ -3,8 +3,9 @@ require 'formula'
 class Canna < Formula
   homepage 'http://canna.sourceforge.jp/'
   url 'http://sourceforge.jp/frs/redir.php?m=jaist&f=%2Fcanna%2F9565%2FCanna37p3.tar.bz2'
-  md5 '0b8c241f63ab4cd3c0b9be569456dc33'
-  version '3.7p3_2'
+  #md5 '0b8c241f63ab4cd3c0b9be569456dc33'
+  sha1 'e39eece7c70c669dd46dd74b26121a60a2496fde'
+  version '3.7p3'
 
   depends_on 'imake' => :build
   depends_on 'gcc' => :build
