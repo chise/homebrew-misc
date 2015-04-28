@@ -25,7 +25,8 @@ class Canna < Formula
     inreplace 'update-canna-dics-dir', '@PREFIX@', prefix
     inreplace 'update-canna-dics-dir', '@HOMEBREW_VAR@', var
 
-    ENV.append 'IMAKECPP', 'cpp-4.9'
+    cpp_program = Formula["gcc"].prefix/"bin/cpp-#{Formula["gcc"].version_suffix}"
+    ENV['IMAKECPP'] = cpp_program
 
     system "xmkmf"
 
