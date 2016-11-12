@@ -1,10 +1,11 @@
 require 'formula'
 
 class Canna < Formula
-  homepage 'http://canna.sourceforge.jp/'
-  url 'http://sourceforge.jp/frs/redir.php?m=jaist&f=%2Fcanna%2F9565%2FCanna37p3.tar.bz2'
+  homepage 'http://canna.osdn.jp/'
+  url 'https://ja.osdn.net/frs/redir.php?m=iij&f=%2Fcanna%2F9565%2FCanna37p3.tar.bz2'
   #md5 '0b8c241f63ab4cd3c0b9be569456dc33'
-  sha1 'e39eece7c70c669dd46dd74b26121a60a2496fde'
+  #sha1 'e39eece7c70c669dd46dd74b26121a60a2496fde'
+  sha256 '7d98d925043d3af24f99a8a2a09e3b4d6dfe881efc1303ef4a7f495a0f4542a7'
   version '3.7p3'
 
   depends_on 'imake' => :build
