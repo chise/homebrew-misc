@@ -38,7 +38,7 @@ class Canna < Formula
     system "make install.man"
     ENV['MAKEFLAGS'] = previous_makeflags
 
-    ln_sf HOMEBREW_PREFIX+"include", include+"canna"
+    include.install_symlink "canna" => "canna"
 
     system "install -c -m 755 update-canna-dics-dir #{prefix}/sbin/"
 
